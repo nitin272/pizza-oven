@@ -1,0 +1,42 @@
+.nav-other{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    position: sticky;
+    top:0;
+}
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.about-right h3{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+.about-right{
+    padding: 70px;
+    font-size: 18px;
+    text-align: center;
+}
+.location{
+    position: relative;
+    top: 100px;
+    right: 135px;
+    color: grey;
+}
+.ordered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.ordered img{
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+
+}

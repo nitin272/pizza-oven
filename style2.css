@@ -1,0 +1,82 @@
+.top-2{
+    background:rgba(0, 0,0, 0.6)url(https://images.unsplash.com/photo-1533777419517-3e4017e2e15a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFtaWx5JTIwZGlubmVyfGVufDB8fDB8fHww&w=1000&q=80);
+    background-blend-mode: darken;
+    background-size: cover;
+    height: 100vh;
+    padding: 10px;
+
+}
+.family{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.family img{
+    margin: 20px;
+}
+.middle-book{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.middle-book h1{
+    font-size: 80px;
+    margin: 10px;
+    
+    
+}
+.form{
+    background-color: rgb(240,188,94);
+    padding: 20px 25px;
+    border:none;
+    border-radius: 10px;
+    margin: 20px;
+}
+.form input{
+    background-color: rgba(250,250,240,0.5);
+    display: block;
+    width: 300px;
+}
+.form button{
+    padding: 5px;
+    background-color: rgb(240,188,94);
+    color: black;
+    border: rgb(160, 109, 15) 2px solid ;
+    border-radius: 10px;
+}
+.form input::placeholder{
+    color:rgb(68, 68, 68);
+}
+.details-2{
+    width: 80%;
+    margin:auto;
+    margin-top: 20px;
+}
+.details-2 p{
+    text-align: center;
+}
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.option{
+    width: 30%;
+    height: 300px;
+    color: black;
+    background-color: rgb(240,188,94);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    
+}

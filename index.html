@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Pizza Oven - Order Pizza Online</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+
+<body>
+  <div class="total-items">
+    <p>0</p>
+  </div>
+  <div class="cart-btn">
+    <a href="#cart">
+      <img src="cart.png"  alt="">
+    </a>
+  </div>
+  <section class="top">
+    <div class="navbar">
+      <p>THE PIZZA OVEN</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a> </li>
+          <li><a href="about.html">ABOUT US</a> </li>
+          <li><a href="reservations.html">RESERVATIONS</a> </li>
+          <li>YOUR ACCOUNT</li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+      </div>
+    </div>
+    <div class="title">
+      <img src="pizza.png" alt="" width="30%" />
+      <h1>THE PIZZA OVEN</h1>
+      <p>WHERE FLAMES MEET FLAVOUR</p>
+    </div>
+    <div class="menu-btn">
+      <a href="#menu">MENU</a>
+    </div>
+  </section>
+  <section class="middle">
+    <div class="head">
+      <a href="" id="menu"></a>
+      <h1>OUR MENU</h1>
+    </div>
+    <div class="pizzas" id="Pizzas">
+      <div class="row row-1">
+        <div class="detail" id="Pizza-1">
+          <img
+            src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/10ddf620-ae20-477f-b4b2-9bce1ded021d_BlazingOnionPaprikacartmenu.jpeg" />
+          <p class="price">Rs. 350</p>
+          <p class="name">Blazing Onion & Paprika</p>
+          <p class="sub-details">
+            Hot & spicy pizza with onion & red paprika toppings and a new
+            spicy peri peri sauce on a Domino's cheesy base
+          </p>
+        <div class="spanparent">
+          <span id = 'Add1' onclick="sub('Add1','add-1'); increment('Pizza-1')">Add to Cart</span>
+          </div>
+          <div class="add-minus" id = 'add-1'>
+            <p id="minus" onclick="decrement('Pizza-1')">-</p>
+            <p id="Pizza-1" class="quant">0</p>
+            <p id="add" onclick="increment('Pizza-1');">+</p>
+            <div class="confirm" onclick="generateCart('Pizza-1')">
+              <p>Confirm</p>
+            </div>            
+          </div>
+        </div>
+        <div class="detail" id="Pizza-2">
+          <img
+            src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/1b892978-f689-4199-90d2-47df4e261235_farmhouse.png"
+            alt="" />
+          <p class="price">Rs. 350</p>
+          <p class="name">Farmhouse</p>
+          <p class="sub-details">
+            For the veggie gourmet lovers. Succulent zucchini, fresh red &
+            yellow bellpeppers and grilled mushrooms on a thin crust base.
+          </p>
+          <div class="spanparent">
+            <span id = 'Add2' onclick="sub('Add2','add-2')">Add to Cart</span>
+            </div>
+          <div class="add-minus" id = 'add-2'>          
+            <p id="minus" onclick="decrement('Pizza-2')">-</p>
+            <p id="Pizza-2" class="quant">0</p>
+            <p id="add" onclick="increment('Pizza-2')">+</p>
+            <div class="confirm" onclick="generateCart('Pizza-2')">
+              <p>Confirm</p>
+            </div> 
+          </div>
+        </div>
+        <div class="detail" id="Pizza-3">
+          <img
+            src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/8a9f4cab-4f46-4b71-8e9b-55bba0b96366_new_veggie_paradise.jpg"
+            alt="" />
+          <p class="price">Rs. 350</p>
+          <p class="name">Veggie Paradise</p>
+          <p class="sub-details">
+            The awesome foursome! Golden corn, black olives, capsicum, red
+            paprika
+          </p>
+          <div class="spanparent">
+            <span id = 'Add3' onclick="sub('Add3','add-3')">Add to Cart</span>
+            </div>
+          <div class="add-minus" id = 'add-3'>
+            <p id="minus" onclick="decrement('Pizza-3')">-</p>
+            <p id="Pizza-3" class="quant">0</p>
+            <p id="add" onclick="increment('Pizza-3')">+</p>
+            <div class="confirm" onclick="generateCart('Pizza-3')">
+              <p>Confirm</p>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="row row-2" id="Pizza-4">
+        <div class="detail">
+          <img
+            src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/f65964c6-de96-475d-a5a9-3f3698d66ee7_new_peppy_paneer.jpg"
+            alt="" />
+          <p class="price">Rs. 450</p>
+          <p class="name">Peppy Paneer</p>
+          <p class="sub-details">
+            Flavorful trio of juicy paneer, crisp capsicum with spicy red
+            paprika
+          </p>
+          <div class="spanparent">
+            <span id = 'Add4' onclick="sub('Add4','add-4')">Add to Cart</span>
+            </div>
+          <div class="add-minus" id = 'add-4'>
+            <p id="minus" onclick="decrement('Pizza-4')">-</p>
+            <p id="Pizza-4" class="quant">0</p>
+            <p id="add" onclick="increment('Pizza-4')">+</p>
+            <div class="confirm" onclick="generateCart('Pizza-4')">
+              <p>Confirm</p>
+            </div> 
+          </div>
+        </div>
+        <div class="detail" id="Pizza-5">
+          <img
+            src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/17bc2a18-73f5-49d7-95eb-327091806cd6_IndianTandooriPaneer.jpg"
+            alt="" />
+          <p class="price">Rs. 450</p>
+          <p class="name">Indi Tandoori Paneer</p>
+          <p class="sub-details">
+            It is hot. It is spicy. It is oh-so-Indian. Tandoori paneer with
+            capsicum, red paprika & mint mayo
+          </p>
+          <div class="spanparent">
+            <span id = 'Add5' onclick="sub('Add5','add-5')">Add to Cart</span>
+            </div>
+          <div class="add-minus" id = 'add-5'>
+            <p id="minus" onclick="decrement('Pizza-5')">-</p>
+            <p id="Pizza-5" class="quant">0</p>
+            <p id="add" onclick="increment('Pizza-5')">+</p>
+            <div class="confirm" onclick="generateCart('Pizza-5')">
+              <p>Confirm</p>
+            </div>
+          </div>
+        </div>
+        <div class="detail" id="Pizza-6">
+          <img
+            src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/d9d123bc-2284-4e1c-b908-cca62ec5b2b8_new_fresh_veggie.jpg"
+            alt="" />
+          <p class="price">Rs. 450</p>
+          <p class="name">Fresh Veggie</p>
+          <p class="sub-details">
+            Delectable combination of onion & capsicum, a veggie lovers pick
+          </p>
+          <div class="spanparent">
+            <span id = 'Add6' onclick="sub('Add6','add-6')">Add to Cart</span>
+            </div>
+          <div class="add-minus" id = 'add-6'>
+            <p id="minus" onclick="decrement('Pizza-6')">-</p>
+            <p id="Pizza-6" class="quant">0</p>
+            <p id="add" onclick="increment('Pizza-6')">+</p>
+            <div class="confirm" onclick="generateCart('Pizza-6')">
+              <p>Confirm</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="row row-3">
+        <div class="detail" id="Pizza-7">
+          <img
+            src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/925d19dc-9737-4e96-9d31-3cce09083b13_new_non_veg_supreme.jpg"
+            alt="" />
+          <p class="price">Rs. 550</p>
+          <p class="name">Non Veg Supreme</p>
+          <p class="sub-details">
+            Supreme combination of black olives, onion, capsicum, grilled
+            mushroom, pepper barbecue chicken, peri-peri chicken & grilled
+            chicken rashers
+          </p>
+          <div class="spanparent">
+            <span id = 'Add7' onclick="sub('Add7','add-7')">Add to Cart</span>
+            </div>
+          <div class="add-minus" id = 'add-7'>
+            <p id="minus" onclick="decrement('Pizza-7')">-</p>
+            <p id="Pizza-7" class="quant">0</p>
+            <p id="add" onclick="increment('Pizza-7')">+</p>
+            <div class="confirm" onclick="generateCart('Pizza-7')">
+              <p>Confirm</p>
+            </div>
+          </div>
+        </div>
+        <div class="detail" id="Pizza-8">
+          <img
+            src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/b7209ffc-db0f-4c30-9504-b11a11771819_IndianTandooriChickenTikka.jpg"
+            alt="" />
+          <p class="price">Rs. 550</p>
+          <p class="name">Indi Chicken Tikka</p>
+          <p class="sub-details">
+            The wholesome flavour of tandoori masala with Chicken tikka,
+            onion, red paprika & mint mayo
+          </p>
+          <div class="spanparent">
+            <span id = 'Add8' onclick="sub('Add8','add-8')">Add to Cart</span>
+            </div>
+          <div class="add-minus" id = 'add-8'>
+            <p id="minus" onclick="decrement('Pizza-8')">-</p>
+            <p id="Pizza-8" class="quant">0</p>
+            <p id="add" onclick="increment('Pizza-8')">+</p>
+            <div class="confirm" onclick="generateCart('Pizza-8')">
+              <p>Confirm</p>
+            </div>
+          </div>
+        </div>
+        <div class="detail" id="Pizza-9">
+          <img
+            src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/79bc3609-690b-440e-b8be-74694b1f3215_new_margherita_2502.jpg"
+            alt="" />
+          <p class="price">Rs. 550</p>
+          <p class="name">Double Cheese Margherita</p>
+          <p class="sub-details">
+            A classic delight loaded with extra 100% real mozzarella cheese</p>
+            <div class="spanparent">
+              <span id = 'Add9' onclick="sub('Add9','add-9')">Add to Cart</span>
+              </div>
+          <div class="add-minus" id = 'add-9'>
+              <p id="minus" onclick="decrement('Pizza-9')">-</p>
+              <p id="Pizza-9" class="quant">0</p>
+              <p id="add" onclick="increment('Pizza-9')">+</p>
+              <div class="confirm" onclick="generateCart('Pizza-9')">
+                <p>Confirm</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="row row-4">
+        <div class="detail" id="Pizza-10">
+          <img
+            src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/d563d188-486e-4b09-9037-bf183ae70de0_new_chicken_sausage.jpg"
+            alt="" />
+          <p class="price">Rs. 650</p>
+          <p class="name">Chicken Sausage</p>
+          <p class="sub-details">American classic! Spicy, herbed chicken sausage on pizza</p>
+          <div class="spanparent">
+            <span id = 'Add10' onclick="sub('Add10','add-10')">Add to Cart</span>
+            </div>
+          <div class="add-minus" id = 'add-10'>
+            <p id="minus" onclick="decrement('Pizza-10')">-</p>
+            <p id="Pizza-10" class="quant">0</p>
+            <p id="add" onclick="increment('Pizza-10')">+</p>
+            <div class="confirm" onclick="generateCart('Pizza-10')">
+              <p>Confirm</p>
+            </div>
+          </div>
+        </div>
+        <div class="detail" id="Pizza-11">
+          <img
+            src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/0413b992-d529-47fb-9dfc-8fa76abc65bd_PIZ5157_1.jpg"
+            alt="" />
+          <p class="price">Rs. 650</p>
+          <p class="name">Spiced Double Chicken</p>
+          <p class="sub-details">Delightful combination of our spicy duo- Pepper Barbecue Chicken and Peri Peri Chicken
+            for Chicken Lovers</p>
+            <div class="spanparent">
+              <span id = 'Add11' onclick="sub('Add11','add-11')">Add to Cart</span>
+              </div>
+          <div class="add-minus" id = 'add-11'>
+              <p id="minus" onclick="decrement('Pizza-11')">-</p>
+              <p id="Pizza-11" class="quant">0</p>
+              <p id="add" onclick="increment('Pizza-11')">+</p>
+              <div class="confirm" onclick="generateCart('Pizza-11')">
+                <p>Confirm</p>
+              </div>
+            
+            
+            </div>
+        </div>
+        <div class="detail" id="Pizza-12">
+          <img
+            src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/4a407344-f1c3-42aa-81ce-3f8652c62b0d_MoroccanSpicePPNV_N.jpg"
+            alt="" />
+          <p class="price">Rs. 650</p>
+          <p class="name">Moroccan Spice Pizza - Non Veg</p>
+          <p class="sub-details">A pizza loaded with a spicy combination of Harissa sauce, Peri Peri chicken chunks and
+            delicious pasta</p>
+            <div class="spanparent">
+              <span id = 'Add12' onclick="sub('Add12','add-12')">Add to Cart</span>
+              </div>
+          <div class="add-minus" id = 'add-12'>
+              <p id="minus" onclick="decrement('Pizza-12')">-</p>
+              <p id="Pizza-12" class="quant">0</p>
+              <p id="add" onclick="increment('Pizza-12')">+</p>
+              <div class="confirm" onclick="generateCart('Pizza-12')">
+                <p>Confirm</p>
+              </div>
+            
+            
+            </div>
+        </div>
+      </div>
+      <div class="row row-5">
+        <div class="detail" id="Pizza-13">
+          <img
+            src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/f43a97c4-c8d1-4659-86d9-43f49eac32dc_BRD0030.png"
+            alt="" />
+          <p class="price">Rs. 250</p>
+          <p class="name">Paneer Tikka Stuffed Garlic Bread</p>
+          <p class="sub-details">Freshly Baked Stuffed Garlic Bread with Cheese, Onion and Paneer Tikka fillings. Comes
+            with a dash of Basil Parsley Sprinkle on top</p>
+            <div class="spanparent">
+              <span id = 'Add13' onclick="sub('Add13','add-13')">Add to Cart</span>
+              </div>
+          <div class="add-minus" id = 'add-13'>
+              <p id="minus" onclick="decrement('Pizza-13')">-</p>
+              <p id="Pizza-13" class="quant">0</p>
+              <p id="add" onclick="increment('Pizza-13')">+</p>
+              <div class="confirm" onclick="generateCart('Pizza-13')">
+                <p>Confirm</p>
+              </div>
+            </div>
+        </div>
+        <div class="detail" id="Pizza-14">
+          <img
+            src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/0d598b3d-643f-405a-b076-5eaa4e7b57da_Garlic_bread.png"
+            alt="" />
+          <p class="price">Rs. 250</p>
+          <p class="name">Garlic Breadsticks</p>
+          <p class="sub-details">Baked to perfection. Your perfect pizza partner! Tastes best with dip</p>
+          <div class="spanparent">
+            <span id = 'Add14' onclick="sub('Add14','add-14')">Add to Cart</span>
+            </div>
+          <div class="add-minus" id = 'add-14'>
+            <p id="minus" onclick="decrement('Pizza-14')">-</p>
+            <p id="Pizza-14" class="quant">0</p>
+            <p id="add" onclick="increment('Pizza-14')">+</p>
+            <div class="confirm" onclick="generateCart('Pizza-14')">
+              <p>Confirm</p>
+            </div>
+          </div>
+        </div>
+        <div class="detail" id="Pizza-15">
+          <img
+            src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/986652b0-bb8c-4fa9-b495-a46551af7c0c_Stuffed_garlic_Bread.png"
+            alt="" />
+          <p class="price">Rs. 250</p>
+          <p class="name">Classic Stuffed Garlic Bread</p>
+          <p class="sub-details">Freshly baked garlic bread with cheese, juicy corn & tangy jalapeno</p>
+          <div class="spanparent">
+            <span id = 'Add15' onclick="sub('Add15','add-15')">Add to Cart</span>
+            </div>
+          <div class="add-minus" id = 'add-15'>
+            <p id="minus" onclick="decrement('Pizza-15')">-</p>
+            <p id="Pizza-15" class="quant">0</p>
+            <p id="add" onclick="increment('Pizza-15')">+</p>
+            <div class="confirm" onclick="generateCart('Pizza-15')">
+              <p>Confirm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <a href="" id="cart"></a>
+  <section class = 'cart-part'>
+    <h1>YOUR CART</h1>
+    <div id="main-cart">
+      <p>Your Cart is Empty</p>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-left">
+      <div class="brand">
+        <img src="pizza.png" alt="" width="10%">
+        <span>THE PIZZA OVEN</span>
+      </div>
+      <div class="list">
+        <ul>
+          <li>Disclaimer</li>
+          <li>Privacy Policy</li>
+          <li>FAQ</li>
+          <li>Nutritional Value</li>
+          <li>Feedback</li>
+        </ul>
+      </div>
+      <div class="address">
+        <p>Pizza Oven Pvt. Ltd.</p>
+        <p>1123, Ganga Vihar, Industrial Phase-III, Gurugram, Haryana</p>
+        <p>Phone: 9835373993, 8762785187, 1123455990</p>
+        <p>pizzaoven@yahoo.com</p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <img src="https://tse1.explicit.bing.net/th?id=OIP.0_-EPfjdAhoXVj9rDG8-tgHaCg&pid=Api&P=0&h=180" alt="">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.rfenBc7YvtVIA0GRkahSzgHaCM&pid=Api&P=0&h=180" alt="">
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>All images are owned by their respective owner. We claim no ownership over them.</p>
+  </div>
+  <script src="main.js"></script>
+  <script src = 'cart.js'></script>
+</body>
+
+</html>
